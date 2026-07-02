@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Projeto Arara — Curupira, o RescueBot Amazônico</title>
+<meta name="description" content="Curupira é um robô de reconhecimento e resgate desenvolvido para atuar em áreas atingidas por enchentes na Amazônia, mapeando rotas seguras para equipes e comunidades ribeirinhas.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=Manrope:wght@400;500;600;700;800&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/arara.css">
+</head>
+<body>
+
+<!-- ============================================================ NAV -->
+<nav class="nav" id="nav">
+  <a href="#top" class="nav__brand">
+    <img src="assets/logo-light.png" alt="Logo Projeto Arara">
+    <span>Arara</span>
+  </a>
+  <button class="nav__toggle" id="navToggle" aria-label="Abrir menu" aria-expanded="false">☰</button>
+  <ul class="nav__links" id="navLinks">
+    <li><a href="#sobre">Sobre</a></li>
+    <li><a href="#funciona">Funcionamento</a></li>
+    <li><a href="#demo">Demonstração</a></li>
+    <li><a href="#impacto">Impacto</a></li>
+  </ul>
+</nav>
+
+<!-- ============================================================ HERO -->
+<header class="hero" id="top">
+  <svg class="hero__river" viewBox="0 0 1200 800" preserveAspectRatio="none" aria-hidden="true">
+    <defs>
+      <linearGradient id="riverFade" x1="0" y1="0" x2="1" y2="1">
+        <stop offset="0%" stop-color="#1fa98d" stop-opacity="0.5"/>
+        <stop offset="100%" stop-color="#1fa98d" stop-opacity="0"/>
+      </linearGradient>
+    </defs>
+    <path class="filled" d="M -50 620 C 200 560, 260 700, 480 640 S 760 480, 1000 560 S 1300 520 1350 600 L 1350 850 L -50 850 Z"/>
+    <path d="M -50 600 C 200 540, 260 680, 480 620 S 760 460, 1000 540 S 1300 500 1350 580" />
+    <path d="M -50 660 C 220 600, 300 720, 500 680 S 780 540, 1020 610 S 1300 570 1360 640" />
+  </svg>
+
+  <div class="container hero__inner">
+    <div class="hero__copy">
+      <p class="hero__eyebrow eyebrow">Projeto Arara</p>
+      <h1>Tecnologia que enxerga o que a <em>enchente</em> esconde.</h1>
+      <p class="hero__lede">Curupira é o robô de reconhecimento e resgate do Projeto Arara: sensores inteligentes mapeiam o terreno pós-enchente na Amazônia e apontam rotas seguras para equipes de resgate e comunidades ribeirinhas.</p>
+      <div class="hero__cta">
+        <a href="#sobre" class="btn btn--primary">Conheça a missão</a>
+        <a href="#demo" class="btn btn--ghost">Ver o robô em ação</a>
+      </div>
+      <div class="hero__stats">
+        <div class="hero__stat"><b>4</b><span>rodas motorizadas todo-terreno</span></div>
+        <div class="hero__stat"><b>360°</b><span>varredura por sensor ultrassônico</span></div>
+        <div class="hero__stat"><b>1</b><span>missão: proteger a Amazônia</span></div>
+      </div>
+    </div>
+
+    <div class="hero__visual">
+      <div class="hero__frame">
+        <img src="assets/robo-diorama-1.jpg" alt="Robô Curupira sobre maquete de terreno amazônico atingido por enchente" loading="eager">
+      </div>
+      <div class="hero__badge">
+        <span class="dot"></span>
+        <div>
+          <b>Sensor ativo</b>
+          <span>Escaneando obstáculos em tempo real</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="scroll-cue">Role para explorar</div>
+</header>
+
+<!-- ============================================================ SOBRE -->
+<section class="section section--sand" id="sobre">
+  <div class="container">
+    <div class="section__head reveal">
+      <span class="eyebrow">Sobre o projeto</span>
+      <h2>Um assistente robótico para reconhecimento e resgate na Amazônia</h2>
+    </div>
+
+    <div class="about__grid">
+      <div class="about__text reveal">
+        <p>O <strong>Curupira</strong> é um robô desenvolvido para atuar em regiões atingidas por enchentes na Amazônia. Após o recuo das águas, diversos obstáculos permanecem escondidos no solo — troncos, buracos, destroços, fios elétricos e resíduos perigosos.</p>
+        <p>O robô utiliza sensores inteligentes para identificar esses riscos e auxiliar equipes de resgate a encontrarem rotas seguras, reduzindo o perigo em terrenos que ninguém consegue avaliar a olho nu.</p>
+        <a href="#funciona" class="btn btn--primary" style="margin-top:8px;">Conheça a missão</a>
+      </div>
+
+      <div class="cards">
+        <div class="card reveal">
+          <div class="card__icon">🌊</div>
+          <h3>Pós-enchente</h3>
+          <p>Mapeia áreas devastadas pelas cheias, identificando locais de difícil acesso e riscos para moradores e equipes de emergência — sobretudo em comunidades ribeirinhas isoladas.</p>
+        </div>
+        <div class="card reveal">
+          <div class="card__icon">📡</div>
+          <h3>Sensores inteligentes</h3>
+          <p>Sensores infravermelhos detectam obstáculos, buracos e destroços, transmitindo informações em tempo real para a central de operações.</p>
+        </div>
+        <div class="card reveal">
+          <div class="card__icon">🚑</div>
+          <h3>Apoio ao resgate</h3>
+          <p>Indica os caminhos mais seguros durante operações de reconhecimento, reduzindo o risco de acidentes e agilizando o atendimento às vítimas.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================ GALERIA -->
+<section class="section section--clay" id="galeria">
+  <div class="container">
+    <div class="section__head reveal">
+      <span class="eyebrow">Galeria</span>
+      <h2>O Curupira em campo, do protótipo à maquete</h2>
+      <p>Registros da montagem do robô e da maquete que simula uma comunidade ribeirinha atingida pela cheia.</p>
+    </div>
+
+    <div class="gallery reveal">
+      <div class="gallery__viewport">
+        <div class="gallery__track" id="galleryTrack">
+          <figure class="gallery__slide">
+            <img class="gallery__bg" src="assets/robo-diorama-1.jpg" alt="" aria-hidden="true" loading="lazy">
+            <img class="gallery__fg" src="assets/robo-diorama-1.jpg" alt="Robô Curupira posicionado sobre a maquete de terreno, próximo a uma casa de comunidade ribeirinha" loading="lazy">
+            <figcaption>Reconhecimento de terreno na maquete da comunidade ribeirinha</figcaption>
+          </figure>
+          <figure class="gallery__slide">
+            <img class="gallery__bg" src="assets/robo-diorama-2.jpg" alt="" aria-hidden="true" loading="lazy">
+            <img class="gallery__fg" src="assets/robo-diorama-2.jpg" alt="Robô Curupira em outro ângulo sobre a maquete, com vegetação e casas ao fundo" loading="lazy">
+            <figcaption>Sensor ultrassônico frontal identificando obstáculos no solo</figcaption>
+          </figure>
+          <figure class="gallery__slide">
+            <img class="gallery__bg" src="assets/robo-diorama-3.jpg" alt="" aria-hidden="true" loading="lazy">
+            <img class="gallery__fg" src="assets/robo-diorama-3.jpg" alt="Maquete completa da comunidade ribeirinha com casas coloridas e o robô Curupira ao centro, cercada por estudantes" loading="lazy">
+            <figcaption>Maquete completa da comunidade ribeirinha simulada</figcaption>
+          </figure>
+          <figure class="gallery__slide">
+            <img class="gallery__bg" src="assets/robo-componentes.jpg" alt="" aria-hidden="true" loading="lazy">
+            <img class="gallery__fg" src="assets/robo-componentes.jpg" alt="Vista superior do chassi do robô mostrando bateria, placa Arduino, protoboard e sensores" loading="lazy">
+            <figcaption>Chassi aberto: Arduino, protoboard, sensor ultrassônico e módulo bluetooth</figcaption>
+          </figure>
+        </div>
+        <button class="gallery__nav gallery__nav--prev" id="prevSlide" aria-label="Imagem anterior">‹</button>
+        <button class="gallery__nav gallery__nav--next" id="nextSlide" aria-label="Próxima imagem">›</button>
+      </div>
+      <div class="gallery__dots" id="galleryDots"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================ COMO FUNCIONA -->
+<section class="section section--dark" id="funciona">
+  <div class="container">
+    <div class="section__head reveal">
+      <span class="eyebrow">Como funciona</span>
+      <h2>Da varredura do terreno até a rota segura</h2>
+      <p>Cinco etapas em sequência, do momento em que o Curupira entra em campo até o apoio direto às equipes de resgate.</p>
+    </div>
+
+    <div class="timeline">
+      <div class="timeline__line" aria-hidden="true"></div>
+
+      <div class="timeline__step reveal">
+        <div class="timeline__num">01</div>
+        <div class="timeline__body">
+          <h3>Escaneia o terreno continuamente</h3>
+          <p>O robô percorre a área alagada em busca de qualquer alteração no solo.</p>
+        </div>
+      </div>
+      <div class="timeline__step reveal">
+        <div class="timeline__num">02</div>
+        <div class="timeline__body">
+          <h3>Detecta troncos, lama e destroços</h3>
+          <p>Sensores identificam obstáculos escondidos que ficaram após o recuo das águas.</p>
+        </div>
+      </div>
+      <div class="timeline__step reveal">
+        <div class="timeline__num">03</div>
+        <div class="timeline__body">
+          <h3>Calcula rotas seguras automaticamente</h3>
+          <p>Com os dados coletados, o sistema define o caminho de menor risco.</p>
+        </div>
+      </div>
+      <div class="timeline__step reveal">
+        <div class="timeline__num">04</div>
+        <div class="timeline__body">
+          <h3>Transmite dados em tempo real</h3>
+          <p>As informações chegam à central de operações assim que são captadas.</p>
+        </div>
+      </div>
+      <div class="timeline__step reveal">
+        <div class="timeline__num">05</div>
+        <div class="timeline__body">
+          <h3>Apoia equipes e comunidades isoladas</h3>
+          <p>Resgatistas recebem rotas seguras para agir com mais rapidez e menos risco.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================ DEMO -->
+<section class="section section--sand" id="demo">
+  <div class="container">
+    <div class="section__head reveal">
+      <span class="eyebrow">Demonstração</span>
+      <h2>Veja o Curupira em ação</h2>
+      <p>Teste em bancada do chassi motorizado, do sensor ultrassônico e da resposta a obstáculos.</p>
+    </div>
+
+    <div class="demo reveal">
+      <div class="demo__frame">
+        <video id="demoVideo" src="assets/demo-robo.mp4" poster="assets/demo-poster.jpg" playsinline preload="metadata" controls></video>
+        <button class="demo__play" id="demoPlay" aria-label="Reproduzir vídeo de demonstração">
+          <svg viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="40" cy="40" r="39" fill="#faf6ee" fill-opacity="0.94"/>
+            <path d="M32 26 L56 40 L32 54 Z" fill="#0a1a12"/>
+          </svg>
+        </button>
+      </div>
+      <div class="demo__caption">
+        <span><span class="eyebrow">Teste de bancada</span> &nbsp;·&nbsp; tração 4x4 e sensor de proximidade</span>
+        <span>Arduino + módulo bluetooth + sensor ultrassônico</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================ IMPACTO -->
+<section class="section section--dark" id="impacto">
+  <div class="container impact">
+    <div class="reveal">
+      <span class="eyebrow" style="color:var(--river-300); display:block; margin-bottom:18px;">Impacto social</span>
+      <p class="impact__quote">O Curupira <span>reduz o risco</span> enfrentado pelas equipes de resgate, acelera a localização de vítimas e identifica áreas inseguras — contribuindo para a reconstrução das comunidades atingidas pelas enchentes.</p>
+    </div>
+    <div class="reveal">
+      <p style="color:rgba(250,246,238,0.7); margin-bottom:24px;">Além do resgate imediato, o robô gera mapas ambientais que auxiliam órgãos públicos no planejamento das ações de recuperação da região.</p>
+      <div class="impact__stats">
+        <div class="impact__stat"><b>Rotas</b><span>seguras identificadas em campo</span></div>
+        <div class="impact__stat"><b>Mapas</b><span>ambientais para órgãos públicos</span></div>
+        <div class="impact__stat"><b>Risco</b><span>reduzido para equipes de resgate</span></div>
+        <div class="impact__stat"><b>Comunidades</b><span>ribeirinhas apoiadas</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================ FOOTER -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer__top">
+      <a href="#top" class="footer__brand">
+        <img src="assets/logo-light.png" alt="Logo Projeto Arara">
+        <span>Curupira</span>
+      </a>
+      <ul class="footer__links">
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#funciona">Funcionamento</a></li>
+        <li><a href="#demo">Demonstração</a></li>
+        <li><a href="#impacto">Impacto</a></li>
+      </ul>
+    </div>
+    <div class="footer__bottom">
+      <span>Curupira © 2026 — Projeto Arara</span>
+      <span>Tecnologia, inovação e proteção para a Amazônia.</span>
+    </div>
+  </div>
+</footer>
+
+<script src="/arara.js"></script>
+</body>
+</html>
